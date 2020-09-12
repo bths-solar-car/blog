@@ -3,5 +3,5 @@ layout = "index"
 framed = true
 +++
 
-# Hello world!
-This is a page that pretends to be the `Terminal` showcase.
+# Welcome to Project BlueBird's Blog
+Here you will find the newest updates regarding the progress of our mission.
