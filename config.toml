@@ -59,14 +59,14 @@ paginate = 5
 
     [languages.en.params.logo]
       logoText = "Project BlueBird"
-      logoHomeLink = "/"
+      logoHomeLink = "/blog"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = "/blog/about"
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
-        url = "/showcase"
+        url = "/blog/showcase"
