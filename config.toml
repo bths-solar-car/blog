@@ -1,4 +1,4 @@
-baseurl = "bths-solar-car.github.io/blog/"
+baseurl = "https://bths-solar-car.github.io/blog/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
