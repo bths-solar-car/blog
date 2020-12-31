@@ -6,7 +6,7 @@ authorTwitter = "" #do not include @
 cover = ""
 tags = ["SYSTEM ADMIN"]
 keywords = ["", ""]
-summary = "This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must."
+summary = "This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must here."
 +++
 
 ## Intro
