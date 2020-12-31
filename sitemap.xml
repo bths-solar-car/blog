@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://bths-solar-car.github.io/blog/</loc>
+    <lastmod>2020-12-31T15:16:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bths-solar-car.github.io/blog/post/note-to-devs/</loc>
+    <lastmod>2020-12-31T15:16:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bths-solar-car.github.io/blog/post/</loc>
+    <lastmod>2020-12-31T15:16:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bths-solar-car.github.io/blog/tags/system-admin/</loc>
+    <lastmod>2020-12-31T15:16:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bths-solar-car.github.io/blog/tags/</loc>
+    <lastmod>2020-12-31T15:16:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bths-solar-car.github.io/blog/categories/</loc>
+  </url>
+  
+</urlset>

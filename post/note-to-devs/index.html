@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://bths-solar-car.github.io/blog/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://bths-solar-car.github.io/blog/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://bths-solar-car.github.io/blog/css/github.min.css' />
+    <link rel="stylesheet" href='https://bths-solar-car.github.io/blog/css/github-style.css' />
+    <link rel="stylesheet" href='https://bths-solar-car.github.io/blog/css/light.css' />
+    <link rel="stylesheet" href='https://bths-solar-car.github.io/blog/css/dark.css' />
+    <link rel="stylesheet" href='https://bths-solar-car.github.io/blog/css/syntax.css' />
+    <title>Guide for Blogging (devs only) - BlueBird Blog</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/github.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must here." />
+<meta name="keywords"
+  content=', ' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://bths-solar-car.github.io/blog/post/note-to-devs/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Guide for Blogging (devs only) - BlueBird Blog" />
+<meta name="twitter:description"
+  content="This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must here." />
+<meta name="twitter:site" content="https://bths-solar-car.github.io/blog/" />
+<meta name="twitter:creator" content="THE SYSTEM ADMIN" />
+<meta name="twitter:image"
+  content="https://bths-solar-car.github.io/blog/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Guide for Blogging (devs only) - BlueBird Blog">
+<meta property="og:description"
+  content="This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must here." />
+<meta property="og:url" content="https://bths-solar-car.github.io/blog/post/note-to-devs/" />
+<meta property="og:site_name" content="Guide for Blogging (devs only)" />
+<meta property="og:image"
+  content="https://bths-solar-car.github.io/blog/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-09-11 13:24:16 -0500 -0500" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://bths-solar-car.github.io/blog/">
+        <svg class="octicon" height="32" viewBox="0 0 16 16" version="1.1" width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://bths-solar-car.github.io/blog/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://bths-solar-car.github.io/blog/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://bths-solar-car.github.io/blog/">
+                  <img class=" avatar-user"
+                    src="https://bths-solar-car.github.io/blog/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://bths-solar-car.github.io/blog/">Project BlueBird</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="https://bths-solar-car.github.io/blog/post/note-to-devs/">Guide for Blogging (devs only)</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Fri, 11 Sep 2020 13:24:16 -0500"
+                    class="no-wrap">
+                    Fri, 11 Sep 2020 13:24:16 -0500</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Thu, 31 Dec 2020 15:16:43 -0500"
+                    class="no-wrap">
+                    Thu, 31 Dec 2020 15:16:43 -0500</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div class="file-header d-flex flex-md-items-center flex-items-start">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    595 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="/blog/tags/system-admin">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      SYSTEM ADMIN
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5">
+                <article class="markdown-body entry-content container-lg"><h2 id="intro">Intro</h2>
+<p>This post will describe the ins and outs of markdown files and hugo. Use with caution and with sincerity. A good developer knows what problems may arise. It is up to you to decide what to do, but be wary of anything you don&rsquo;t understand. Spaghetti code is frowned upon and should only be used if you fully understand the code.</p>
+<p>You may notice that the rest of this post is gibberish, don&rsquo;t worry. This is intended to show what features are available to you. <strong>If you want a certain look in one of your posts, look into the markdown.</strong></p>
+<p>You will find many similarities between mediums that utilize markdown like Discord. In Discord, you use &lsquo;&gt;&rsquo; to represent a quote. You can also use this same character in markdown.</p>
+<h3 id="very-important">Very Important!</h3>
+<p>When making a new post, assuming you have <code>hugo</code> installed&hellip;</p>
+<h4 id="if-you-dont-have-hugo-installed">If you don&rsquo;t have hugo installed&hellip;</h4>
+<p>See Hugo&rsquo;s quickstart guide <a href="https://gohugo.io/getting-started/quick-start/">here</a>.</p>
+<p><em>Ignore step 2 and step 3, we&rsquo;ve already created the blog and the theme.</em></p>
+<h4 id="moving-on">Moving on&hellip;</h4>
+<p>At the <em>beginning</em> of every post, there is a configuration space where you can set the title, date, author and description of the post.</p>
+<p>There are <em>two</em> ways of writing this configuration. They&rsquo;re both very simple, and it doesn&rsquo;t matter which way you set up the configuration, as long as it&rsquo;s consistent in the current post.</p>
+<h5 id="first-way">First Way</h5>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">+++
+title = &#34;&#34;
+date = &#34;2020-12-30&#34;
+author = &#34;&#34;
+tags = [&#34;&#34;, &#34;&#34;]
+keywords = [&#34;&#34;, &#34;&#34;]
+summary = &#34;&#34;
++++
+</code></pre></div><p>Notice how this uses <code>+++</code> and <code>=</code> characters.</p>
+<h5 id="second-way">Second Way</h5>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---
+title: &#34;&#34;
+date: &#34;2020-12-30&#34;
+author: &#34;&#34;
+tags: [&#34;&#34;, &#34;&#34;]
+keywords: [&#34;&#34;, &#34;&#34;]
+summary: &#34;&#34;
+---
+</code></pre></div><p>Notice how this uses <code>---</code> and <code>:</code> characters.</p>
+<h3 id="header-level-3">Header Level 3</h3>
+<p>The header up above is written exactly as follows: <code>### Header Level 3</code>.</p>
+<p>The code snippet below is exactly as follows: back ticks are used to indicate code snippets.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* This code snippet can be used to show algorithms relevant to Project BlueBird */</span>
+<span class="c">/* PostCSS code */</span>
+
+<span class="nt">pre</span> <span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="mh">#1a1a1d</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">overflow</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+
+  <span class="err">@media</span> <span class="err">(--phone)</span> <span class="err">{</span>
+    <span class="k">white-space</span><span class="p">:</span> <span class="kc">pre</span><span class="o">-</span><span class="kc">wrap</span><span class="p">;</span>
+    <span class="k">word-wrap</span><span class="p">:</span> <span class="kc">break-word</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nt">code</span> <span class="p">{</span>
+    <span class="k">background</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#ccc</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Features a diverse variety of languages
+</span><span class="c1">// JS code
+</span><span class="c1"></span>
+<span class="kr">const</span> <span class="nx">menuTrigger</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.menu-trigger&#39;</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">menu</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.menu&#39;</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">mobileQuery</span> <span class="o">=</span> <span class="nx">getComputedStyle</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">).</span><span class="nx">getPropertyValue</span><span class="p">(</span><span class="s1">&#39;--phoneWidth&#39;</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">isMobile</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">matchMedia</span><span class="p">(</span><span class="nx">mobileQuery</span><span class="p">).</span><span class="nx">matches</span>
+<span class="kr">const</span> <span class="nx">isMobileMenu</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="nx">menuTrigger</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">&#39;hidden&#39;</span><span class="p">,</span> <span class="o">!</span><span class="nx">isMobile</span><span class="p">())</span>
+  <span class="nx">menu</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">&#39;hidden&#39;</span><span class="p">,</span> <span class="nx">isMobile</span><span class="p">())</span>
+<span class="p">}</span>
+
+<span class="nx">isMobileMenu</span><span class="p">()</span>
+
+<span class="nx">menuTrigger</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nx">menu</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">&#39;hidden&#39;</span><span class="p">))</span>
+
+<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="nx">isMobileMenu</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Comments work too --&gt;</span>
+<span class="c">&lt;!-- HTML code --&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;main&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;title&#34;</span><span class="p">&gt;</span>{{ .Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    {{ range .Pages }}
+      {{ .Render &#34;summary&#34;}}
+    {{ end }}
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</code></pre></div><h4 id="header-level-4">Header Level 4</h4>
+<p>The header up above is written exactly as follows: <code>#### Header Level 4</code>.</p>
+<p>Note that the number of # corresponds to the header&rsquo;s level/size.</p>
+<p>Below, you&rsquo;ll find that bullet points and even dash-points work in levels of indentation.</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4
+<ul>
+<li>Item 4a</li>
+<li>Item 4b</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Here, I&rsquo;m using asterisks, but it is formatted the same as dashes.</li>
+<li>Same thing here
+<ul>
+<li>Same thing here as well</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Numbered item 1</li>
+<li>Numbered item 2</li>
+<li>Numbered item 3</li>
+<li>Numbered item 4
+<ul>
+<li>indented items work too.</li>
+</ul>
+</li>
+</ol>
+<p>Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc ut tincidunt mauris. Sed at gravida risus, id semper magna. Nullam vitae enim mattis, sodales neque non, pharetra elit. Cras sit amet sagittis augue, et finibus turpis. Ut tempus tincidunt diam vel pharetra. Nulla porttitor odio sit amet nulla scelerisque, quis aliquam mi imperdiet. Sed tincidunt dui vel tellus vestibulum rhoncus. Donec tempus ultrices velit.</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://bths-solar-car.github.io/blog/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">© Project BlueBird - Final Design by Telemetry :: Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="https://bths-solar-car.github.io/blog/js/github-style.js"></script>
+
+
+
+</html>

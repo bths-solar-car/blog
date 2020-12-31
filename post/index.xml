@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on BlueBird Blog</title>
+    <link>https://bths-solar-car.github.io/blog/post/</link>
+    <description>Recent content in Posts on BlueBird Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2020 13:24:16 -0500</lastBuildDate><atom:link href="https://bths-solar-car.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide for Blogging (devs only)</title>
+      <link>https://bths-solar-car.github.io/blog/post/note-to-devs/</link>
+      <pubDate>Fri, 11 Sep 2020 13:24:16 -0500</pubDate>
+      
+      <guid>https://bths-solar-car.github.io/blog/post/note-to-devs/</guid>
+      <description>This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must here.</description>
+    </item>
+    
+  </channel>
+</rss>
