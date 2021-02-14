@@ -1,1 +1,0 @@
-# BTHS Solar Car Blog

@@ -1,13 +1,12 @@
-+++
-title = "Guide for Blogging (devs only)"
-date = "2020-09-11T13:24:16-05:00"
-author = "THE SYSTEM ADMIN"
-authorTwitter = "" #do not include @
-cover = ""
-tags = ["SYSTEM ADMIN"]
-keywords = ["", ""]
-summary = "This post will teach you everything you need to know making posts on this blog. Read thoroughly and with caution. Experience with Git and GitHub is a must."
-+++
+---
+title: "Guide for Blogging (devs only)"
+date: "2020-09-11T13:24:16-05:00"
+author: "THE SYSTEM ADMIN"
+authorTwitter: "" #do not include @
+cover: "/images/gentoo-red.jpg"
+tags: ["SYSTEM-ADMIN"]
+keywords: ["", ""]
+---
 
 ## Intro
 
@@ -17,15 +16,18 @@ You may notice that the rest of this post is gibberish, don't worry. This is int
 
 You will find many similarities between mediums that utilize markdown like Discord. In Discord, you use '>' to represent a quote. You can also use this same character in markdown.
 
-### Very Important!
+### Very Important
+
 When making a new post, assuming you have `hugo` installed...
 
-#### If you don't have hugo installed...
+#### If you don't have hugo installed
+
 See Hugo's quickstart guide [here](https://gohugo.io/getting-started/quick-start/).
 
 *Ignore step 2 and step 3, we've already created the blog and the theme.*
 
-#### Moving on...
+#### Moving on
+
 At the *beginning* of every post, there is a configuration space where you can set the title, date, author and description of the post.
 
 There are _two_ ways of writing this configuration. They're both very simple, and it doesn't matter which way you set up the configuration, as long as it's consistent in the current post.
@@ -42,6 +44,7 @@ keywords = ["", ""]
 summary = ""
 +++
 ```
+
 Notice how this uses `+++` and `=` characters.
 
 ##### Second Way
@@ -56,6 +59,7 @@ keywords: ["", ""]
 summary: ""
 ---
 ```
+
 Notice how this uses `---` and `:` characters.
 
 ### Header Level 3
@@ -66,7 +70,7 @@ The code snippet below is exactly as follows: back ticks are used to indicate co
 
 ```css
 /* This code snippet can be used to show algorithms relevant to Project BlueBird */
-/* PostCSS code */
+/* Valid PostCSS code */
 
 pre {
   background: #1a1a1d;
@@ -135,11 +139,13 @@ Below, you'll find that bullet points and even dash-points work in levels of ind
 - Item 2
 - Item 3
 - Item 4
-    - Item 4a
-    - Item 4b
+  - Item 4a
+  - Item 4b
+
 * Here, I'm using asterisks, but it is formatted the same as dashes.
 * Same thing here
-    * Same thing here as well
+  * Same thing here as well
+
 1. Numbered item 1
 2. Numbered item 2
 3. Numbered item 3
@@ -147,4 +153,3 @@ Below, you'll find that bullet points and even dash-points work in levels of ind
     - indented items work too.
 
 Aliquam erat volutpat. In hac habitasse platea dictumst. Nunc ut tincidunt mauris. Sed at gravida risus, id semper magna. Nullam vitae enim mattis, sodales neque non, pharetra elit. Cras sit amet sagittis augue, et finibus turpis. Ut tempus tincidunt diam vel pharetra. Nulla porttitor odio sit amet nulla scelerisque, quis aliquam mi imperdiet. Sed tincidunt dui vel tellus vestibulum rhoncus. Donec tempus ultrices velit.
-

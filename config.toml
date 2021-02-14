@@ -1,23 +1,45 @@
 baseurl = "https://bths-solar-car.github.io/blog/"
+title = "BTHS Solar Blog"
 languageCode = "en-us"
-title = "BlueBird Blog"
-theme = "github-style"
-googleAnalytics = ""
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+theme = "m10c"
+paginate = 5
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
 
 [params]
-  author = "Project BlueBird"
-  description = "The pessimist sees difficulty in every opportunity"
-  instagram = "bths.solar"
-  # email = "email"
-  github = "BTHS SCT"
-  url = "https://bths-solar-car.github.io/"
-  keywords = "Solar, Solar Car, Car, Blue, BlueBird, Blue Bird, Project, Solar Car Challenge, BTHS, Brooklyn Technical, High School, High, School, blog, electric car"
-  rss = false
-  lastmod = true
-  favicon = "/images/github.png"
-  location = "Brooklyn, NY"
+    author = "BTHS Solar"
+    description = "The pessimist sees difficulty in every opportunity"
+    keywords = "Solar, Solar Car, Car, Blue, BlueBird, Blue Bird, Project, Solar Car Challenge, BTHS, Brooklyn Technical, High School, High, School, blog, electric car"
+    # TODO: add favicon image
+    # favicon = "/images/github.png"
+    location = "Brooklyn, NY"
 
-[frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+    [[params.social]]
+        name = "github"
+        url = "https://github.com/bthssolar"
+    [[params.social]]
+        name = "homepage"
+        # TODO: change this url later, in case the domain is bought
+        url = "https://bths-solar-car.github.io/"
+    [[params.social]]
+        name = "instagram"
+        url = "https://instagram.com/bths.solar"
+
+    # TODO: Create new theme. 
+    # Current theme: blue/green/hot-pink/dark theme
+    
+    [params.style]
+      darkestColor = "#052056"   # left background color
+      darkColor = "#252932"      # background color
+      primaryColor = "#00b300"   # green
+      lightColor = "#e2e2e2"     # text color
+      lightestColor = "#c6138a"  # pink
